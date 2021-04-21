@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AeM\\source\\repos\\TestFusionRTA\\TestFusionRTA\\TestFusionRTA.csproj": {}
+    "D:\\Programming\\Repositories\\TestingFusionBlazorServer\\TestFusionRTA\\TestFusionRTA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AeM\\source\\repos\\TestFusionRTA\\TestFusionRTA\\TestFusionRTA.csproj": {
+    "D:\\Programming\\Repositories\\TestingFusionBlazorServer\\TestFusionRTA\\TestFusionRTA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AeM\\source\\repos\\TestFusionRTA\\TestFusionRTA\\TestFusionRTA.csproj",
+        "projectUniqueName": "D:\\Programming\\Repositories\\TestingFusionBlazorServer\\TestFusionRTA\\TestFusionRTA.csproj",
         "projectName": "TestFusionRTA",
-        "projectPath": "C:\\Users\\AeM\\source\\repos\\TestFusionRTA\\TestFusionRTA\\TestFusionRTA.csproj",
+        "projectPath": "D:\\Programming\\Repositories\\TestingFusionBlazorServer\\TestFusionRTA\\TestFusionRTA.csproj",
         "packagesPath": "C:\\Users\\AeM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AeM\\source\\repos\\TestFusionRTA\\TestFusionRTA\\obj\\",
+        "outputPath": "D:\\Programming\\Repositories\\TestingFusionBlazorServer\\TestFusionRTA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

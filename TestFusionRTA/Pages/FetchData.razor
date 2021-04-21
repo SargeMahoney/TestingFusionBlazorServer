@@ -1,0 +1,52 @@
+﻿@page "/fetchdata"
+
+@using TestFusionRTA.Data
+@inject IWeatherForecastService _forecastService
+@inherits Stl.Fusion.Blazor.ComputedStateComponent<List<WeatherForecast>>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (State.LatestNonErrorValue == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in State.LatestNonErrorValue)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-success" @onclick="Add">Add</button>
+}
+
+@code {
+
+    protected async Task Add()
+    {
+        await _forecastService.Add();
+    }
+
+   protected async override Task<List<WeatherForecast>> ComputeState(System.Threading.CancellationToken cancellationToken)
+   {
+       return await _forecastService.GetForecastAsync();
+   }
+}
